@@ -28,6 +28,7 @@ class CnnNews {
                 code: 200,
                 status: "OK",
                 messages: `Result of type ${type} news in CNN News`,
+                total: data.length,
                 data: data
             })
         } catch (e) {
@@ -56,6 +57,7 @@ class CnnNews {
                 code: 200,
                 status: "OK",
                 messages: "Result of all news in CNN News",
+                total: data.length,
                 data: data
             })
         } catch (e) {

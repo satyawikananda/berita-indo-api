@@ -30,6 +30,7 @@ class RepublikaNews {
                 code: 200,
                 status: "OK",
                 messages: `Result of type ${type} news in Republika News`,
+                total: data.length,
                 data: data
             })
         } catch (e) {
@@ -60,6 +61,7 @@ class RepublikaNews {
                 code: 200,
                 status: "OK",
                 messages: `Result of all news in Republika News`,
+                total: data.length,
                 data: data
             })
         } catch (e) {

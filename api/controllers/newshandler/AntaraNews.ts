@@ -28,6 +28,7 @@ class AntaraNews {
                 code: 200,
                 status: "OK",
                 messages: `Result of type ${type} news in Antara News`,
+                total: data.length,
                 data: data
             })
         } catch (e) {

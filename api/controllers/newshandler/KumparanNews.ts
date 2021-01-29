@@ -31,6 +31,7 @@ class KumparanNews {
                 code: 200,
                 status: "OK",
                 messages: `Result of all news in Kumparan News`,
+                total: data.length,
                 data: data
             })
         } catch (e) {

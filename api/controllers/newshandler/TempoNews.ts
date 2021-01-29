@@ -21,6 +21,7 @@ class TempoNews {
                 code: 200,
                 status: "OK",
                 messages: `Result of type ${type} news in Tempo News`,
+                total: data.length,
                 data: data
             })
         } catch (e) {
@@ -42,6 +43,7 @@ class TempoNews {
                 code: 200,
                 status: "OK",
                 messages: `Result of all news in Tempo News`,
+                total: data.length,
                 data: result.items
             })
         } catch (e) {

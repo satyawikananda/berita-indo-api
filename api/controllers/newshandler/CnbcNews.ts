@@ -29,6 +29,7 @@ class CnbcNews {
                 code: 200,
                 status: "OK",
                 messages: `Result of type ${type} news in CNBC News`,
+                total: data.length,
                 data: data
             })
         } catch (e) {
@@ -57,6 +58,7 @@ class CnbcNews {
                 code: 200,
                 status: "OK",
                 messages: `Result of type all news in CNBC News`,
+                total: data.length,
                 data: data
             })
         } catch (e) {
