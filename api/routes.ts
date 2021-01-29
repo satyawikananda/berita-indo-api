@@ -50,7 +50,6 @@ router.get('/v1/tempo-news/', BeritaIndo.TempoNews.getAllNews)
 router.get('/v1/antara-news/:type', BeritaIndo.AntaraNews.getNews)
 router.get('/v1/kumparan-news/', BeritaIndo.KumparanNews.getAllNews)
 
-
 router.all('*', BeritaIndo.notFound)
 
 export default router
