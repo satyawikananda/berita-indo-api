@@ -17,6 +17,13 @@ class KumparanNews {
                 delete items['dc:creator']
                 delete items['content:encoded']
                 delete items['content:encodedSnippet']
+                items.images = {
+                    small: items.enclosure.url.replace('w_480', 'w_240'),
+                    medium: items.enclosure.url,
+                    large: items.enclosure.url.replace('w_480', 'w_720'),
+                    extraLarge: items.enclosure.url.replace('w_480', 'w_1080')
+                }
+                delete items.enclosure
                 return items
             })
 
