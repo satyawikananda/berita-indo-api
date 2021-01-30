@@ -2,7 +2,7 @@ import { Request, Response } from 'express'
 import { parserRss } from '../../../utils/parser'
 import { replaceQueryParams } from '../../../utils/replaceQueryParams'
 import { RSS_CNN_NEWS } from '../../../const'
-import { TypeCnn } from '../../../types/common'
+import { TypeCnn, DataResponse } from '../../../types/common'
 
 interface Params {
     type?: TypeCnn
@@ -24,13 +24,14 @@ class CnnNews {
                 items.enclosure.url = image
                 return items
             })
-            return res.status(200).send({
+            const dataResponse: DataResponse = {
                 code: 200,
                 status: "OK",
                 messages: `Result of type ${type} news in CNN News`,
                 total: data.length,
                 data: data
-            })
+            }
+            return res.status(200).send(dataResponse)
         } catch (e) {
             return res.status(500).send({
                 message: `${e.message}`
@@ -53,13 +54,14 @@ class CnnNews {
                 items.enclosure.url = image
                 return items
             })
-            return res.status(200).send({
+            const dataResponse: DataResponse = {
                 code: 200,
                 status: "OK",
-                messages: "Result of all news in CNN News",
+                messages: `Result of all news in CNN News`,
                 total: data.length,
                 data: data
-            })
+            }
+            return res.status(200).send(dataResponse)
         } catch (e) {
             return res.status(500).send({
                 message: `${e.message}`

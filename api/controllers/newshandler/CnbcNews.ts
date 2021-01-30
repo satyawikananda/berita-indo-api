@@ -2,7 +2,7 @@ import { Request, Response } from 'express'
 import { parserRss } from '../../../utils/parser'
 import { replaceQueryParams } from '../../../utils/replaceQueryParams'
 import { RSS_CNBC_NEWS } from '../../../const'
-import { TypeCnbc } from '../../../types/common'
+import { TypeCnbc, DataResponse } from '../../../types/common'
 
 interface Params {
     type?: TypeCnbc
@@ -25,13 +25,14 @@ class CnbcNews {
                 items.enclosure.url = image
                 return items
             })
-            return res.status(200).send({
+            const dataResponse: DataResponse = {
                 code: 200,
                 status: "OK",
                 messages: `Result of type ${type} news in CNBC News`,
                 total: data.length,
                 data: data
-            })
+            }
+            return res.status(200).send(dataResponse)
         } catch (e) {
             return res.status(500).send({
                 message: `${e.message}`
@@ -54,13 +55,14 @@ class CnbcNews {
                 items.enclosure.url = image
                 return items
             })
-            return res.status(200).send({
+            const dataResponse: DataResponse = {
                 code: 200,
                 status: "OK",
-                messages: `Result of type all news in CNBC News`,
+                messages: `Result of all news in CNBC News`,
                 total: data.length,
                 data: data
-            })
+            }
+            return res.status(200).send(dataResponse)
         } catch (e) {
             return res.status(500).send({
                 message: `${e.message}`

@@ -1,6 +1,7 @@
 import { Response } from 'express'
 import { parserRss } from '../../../utils/parser'
 import { RSS_KUMPARAN_NEWS } from '../../../const'
+import { DataResponse } from '../../../types/common'
 
 class KumparanNews {
     static async getAllNews(_, res: Response) {
@@ -26,14 +27,14 @@ class KumparanNews {
                 delete items.enclosure
                 return items
             })
-
-            return res.status(200).send({
+            const dataResponse: DataResponse = {
                 code: 200,
                 status: "OK",
                 messages: `Result of all news in Kumparan News`,
                 total: data.length,
                 data: data
-            })
+            }
+            return res.status(200).send(dataResponse)
         } catch (e) {
             return res.status(500).send({
                 message: `${e.message}`

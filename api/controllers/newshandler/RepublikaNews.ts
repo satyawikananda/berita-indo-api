@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 import { parserRss } from '../../../utils/parser'
 import { RSS_REPUBLIKA_NEWS } from '../../../const'
-import { TypeRepublika } from '../../../types/common'
+import { TypeRepublika, DataResponse } from '../../../types/common'
 
 interface Params {
     type?: TypeRepublika
@@ -25,14 +25,14 @@ class RepublikaNews {
                 delete items['content:encodedSnippet']
                 return items
             })
-
-            return res.status(200).send({
+            const dataResponse: DataResponse = {
                 code: 200,
                 status: "OK",
                 messages: `Result of type ${type} news in Republika News`,
                 total: data.length,
                 data: data
-            })
+            }
+            return res.status(200).send(dataResponse)
         } catch (e) {
             return res.status(500).send({
                 message: `${e.message}`
@@ -56,14 +56,14 @@ class RepublikaNews {
                 delete items['content:encodedSnippet']
                 return items
             })
-
-            return res.status(200).send({
+            const dataResponse: DataResponse = {
                 code: 200,
                 status: "OK",
                 messages: `Result of all news in Republika News`,
                 total: data.length,
                 data: data
-            })
+            }
+            return res.status(200).send(dataResponse)
         } catch (e) {
             return res.status(500).send({
                 message: `${e.message}`

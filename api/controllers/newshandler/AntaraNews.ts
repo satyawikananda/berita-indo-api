@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 import { parserRss } from '../../../utils/parser'
 import { RSS_ANTARA_NEWS } from '../../../const'
-import { TypeAntara } from '../../../types/common'
+import { TypeAntara, DataResponse } from '../../../types/common'
 
 interface Params {
     type?: TypeAntara
@@ -24,13 +24,14 @@ class AntaraNews {
                 delete items.content
                 return items
             })
-            return res.status(200).send({
+            const dataResponse: DataResponse = {
                 code: 200,
                 status: "OK",
                 messages: `Result of type ${type} news in Antara News`,
                 total: data.length,
                 data: data
-            })
+            }
+            return res.status(200).send(dataResponse)
         } catch (e) {
             return res.status(500).send({
                 message: `${e.message}`
