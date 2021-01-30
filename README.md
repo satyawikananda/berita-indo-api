@@ -13,14 +13,14 @@ Berita Indo API (or in English is Indonesian News API) is an API to display many
 
 * `/` : Get all list and info about this API
 * `/v1/cnn-news` : Get all news data of CNN News
-* `/v1/cnn-news/:type` : Get specific news data of CNN News
+* `/v1/cnn-news/:type` : Get specific news data by type news of CNN News
 * `/v1/cnbc-news/` : Get all news data of CNBC News
-* `/v1/cnbc-news/:type` : Get specific news data of CNBC News
+* `/v1/cnbc-news/:type` : Get specific news data by type news of CNBC News
 * `/v1/republika-news` : Get all news data of Republika News
-* `/v1/republika-news/:type` : Get specific news data of Republika News
+* `/v1/republika-news/:type` : Get specific news data by type news of Republika News
 * `/v1/tempo-news/` : Get all news data of Tempo News
-* `/v1/tempo-news/:type` : Get specific news data of Tempo News
-* `/v1/antara-news/:type` : Get specific news data of Antara News
+* `/v1/tempo-news/:type` : Get specific news data by type news of Tempo News
+* `/v1/antara-news/:type` : Get specific news data by type news of Antara News
 * `/v1/kumparan-news/` : Get all news data of Kumparan News
 
 
