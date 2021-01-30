@@ -1,6 +1,6 @@
 export type TypeCnn = "nasional" | "internasional" | "ekonomi" | "olahraga" | "teknologi" | "hiburan" | "gaya-hidup";
 
-export type TypeCnbc = "market" | "investment" | "news" | "entrepreneur" | "syariah" | "tech" | "lifestyle";
+export type TypeCnbc = "market" | "investment" | "news" | "entrepreneur" | "syariah" | "tech" | "lifestyle"
 
 export type TypeRepublika = "news" | "nusantara" | "khazanah" | "islam-digest" | "internasional" | "ekonomi" | "sepakbola" | "leisure"
 

@@ -7,31 +7,36 @@ router.get('/', (_, res: Response) => {
     return res.status(200).send({
         listApi: {
             "CNN News": {
-                all: "http://berita-indo-api.vercel.app/v1/cnn-news/",
-                type: "http://berita-indo-api.vercel.app/v1/cnn-news/:type",
-                example: "http://berita-indo-api.vercel.app/v1/cnn-news/ekonomi"
+                all: "https://berita-indo-api.vercel.app/v1/cnn-news/",
+                type: "https://berita-indo-api.vercel.app/v1/cnn-news/:type",
+                listType: ["nasional", "internasional", "ekonomi", "olahraga", "teknologi", "hiburan", "gaya-hidup"],
+                example: "https://berita-indo-api.vercel.app/v1/cnn-news/ekonomi"
             },
             "CNBC News": {
-                all: "http://berita-indo-api.vercel.app/v1/cnbc-news/",
-                type: "http://berita-indo-api.vercel.app/v1/cnbc-news/:type",
-                example: "http://berita-indo-api.vercel.app/v1/cnbc-news/syariah"
+                all: "https://berita-indo-api.vercel.app/v1/cnbc-news/",
+                type: "https://berita-indo-api.vercel.app/v1/cnbc-news/:type",
+                listType: ["market", "investment", "news", "entrepreneur", "syariah", "tech", "lifestyle"],
+                example: "https://berita-indo-api.vercel.app/v1/cnbc-news/syariah"
             },
             "Republika News": {
-                all: "http://berita-indo-api.vercel.app/v1/republika-news/",
-                type: "http://berita-indo-api.vercel.app/v1/republika-news/:type",
-                example: "http://berita-indo-api.vercel.app/v1/republika-news/islam-digest"
+                all: "https://berita-indo-api.vercel.app/v1/republika-news/",
+                type: "https://berita-indo-api.vercel.app/v1/republika-news/:type",
+                listType: ["news", "nusantara", "khazanah", "islam-digest", "internasional", "ekonomi", "sepakbola", "leisure"],
+                example: "https://berita-indo-api.vercel.app/v1/republika-news/islam-digest"
             },
             "Tempo News": {
-                all: "http://berita-indo-api.vercel.app/v1/tempo-news/",
-                type: "http://berita-indo-api.vercel.app/v1/tempo-news/:type",
-                example: "http://berita-indo-api.vercel.app/v1/tempo-news/bisnis"
+                all: "https://berita-indo-api.vercel.app/v1/tempo-news/",
+                type: "https://berita-indo-api.vercel.app/v1/tempo-news/:type",
+                listType: ["nasional", "bisnis", "metro", "dunia", "bola", "sport", "cantik", "tekno", "otomotif", "nusantara"],
+                example: "https://berita-indo-api.vercel.app/v1/tempo-news/bisnis"
             },
             "Antara News": {
-                type: "http://berita-indo-api.vercel.app/v1/antara-news/:type",
-                example: "http://berita-indo-api.vercel.app/v1/antara-news/hukum"
+                type: "https://berita-indo-api.vercel.app/v1/antara-news/:type",
+                listType: ["terkini", "top-news", "politik", "hukum", "ekonomi", "metro", "sepakbola", "olahraga", "humaniora", "lifestyle", "hiburan", "dunia", "infografik", "tekno", "otomotif", "warta-bumi", "rilis-pers"],
+                example: "https://berita-indo-api.vercel.app/v1/antara-news/hukum"
             },
             "Kumparan News": {
-                type: "http://berita-indo-api.vercel.app/v1/kumparan-news",
+                all: "https://berita-indo-api.vercel.app/v1/kumparan-news",
             },
         },
         author: "Satya Wikananda",
