@@ -51,11 +51,11 @@ For the tech stack, Berita Indo API was using :
 5. Vercel
 6. and many utilities
 
-
 # Showcase
 If you use this API to your project application, you can register your project in this showcase below :
 
-
+# Support Me
+You can support me on [Karya Karsa](https://karyakarsa.com/satyawikananda) and [Trakteer](https://trakteer.id/satya-wikananda/)
 # Contribution
 Want to make this project better? You can contribute this project, I am very open if there are contributions to this project.
 
