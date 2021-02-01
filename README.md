@@ -25,6 +25,22 @@ Berita Indo API (or in English is Indonesian News API) is an API to display many
 * `/v1/antara-news/:type` : Get specific news data by type news of Antara News
 * `/v1/kumparan-news/` : Get all news data of Kumparan News
 
+## To-do List
+- News
+    - [x] CNN News
+    - [x] CNBC News
+    - [x] Republika News
+    - [x] Tempo News
+    - [x] Antara News
+    - [x] Kumparan News
+    - [] Okezone News
+    - [] Liputan 6 News
+    - [] BBC News
+    - [] Tribun News
+- Improve API
+    - [] Search data news
+    - [] Paginate data
+
 
 ## Installation
 If you want to add this project in your own machine, you can install this project by following the step below
