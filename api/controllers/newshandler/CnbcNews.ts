@@ -22,7 +22,11 @@ class CnbcNews {
                 delete items['content:encodedSnippet']
                 delete items.content
                 delete items.guid
-                items.enclosure.url = image
+                items.image = {
+                    small: items.enclosure.url,
+                    large: image
+                }
+                delete items.enclosure
                 return items
             })
             const dataResponse: DataResponse = {
@@ -52,7 +56,11 @@ class CnbcNews {
                 delete items['content:encodedSnippet']
                 delete items.content
                 delete items.guid
-                items.enclosure.url = image
+                items.image = {
+                    small: items.enclosure.url,
+                    large: image
+                }
+                delete items.enclosure
                 return items
             })
             const dataResponse: DataResponse = {
