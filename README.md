@@ -33,13 +33,13 @@ Berita Indo API (or in English is Indonesian News API) is an API to display many
     - [x] Tempo News
     - [x] Antara News
     - [x] Kumparan News
-    - [] Okezone News
-    - [] Liputan 6 News
-    - [] BBC News
-    - [] Tribun News
+    - [ ] Okezone News
+    - [ ] Liputan 6 News
+    - [ ] BBC News
+    - [ ] Tribun News
 - Improve API
-    - [] Search data news
-    - [] Paginate data
+    - [ ] Search data news
+    - [ ] Paginate data
 
 
 ## Installation
