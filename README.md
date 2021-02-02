@@ -7,6 +7,7 @@
 
 </div>
 
+> Dokumentasi untuk bahasa indonesia. [Klik disini](./README-ID.md)
 ## Description
 
 Berita Indo API (or in English is Indonesian News API) is an API to display many news Indonesia like from CNN News, CNBC News, etc. For the datas was parsed from the RSS feed to JSON type and also Rest API. For the routes, you can see it below.
