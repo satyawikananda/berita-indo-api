@@ -38,6 +38,11 @@ router.get('/', (_, res: Response) => {
             "Kumparan News": {
                 all: "https://berita-indo-api.vercel.app/v1/kumparan-news",
             },
+            "Okezone News": {
+                all: "https://berita-indo-api.vercel.app/v1/okezone-news",
+                listType: ["breaking", "sport", "economy", "lifestyle", "celebrity", "bola", "techno"],
+                example: "https://berita-indo-api.vercel.app/v1/okezone-news/bola",
+            },
         },
         author: "Satya Wikananda",
         source: "https://github.com/satyawikananda/berita-indo-api"
@@ -54,6 +59,8 @@ router.get('/v1/tempo-news/:type', BeritaIndo.TempoNews.getNews)
 router.get('/v1/tempo-news/', BeritaIndo.TempoNews.getAllNews)
 router.get('/v1/antara-news/:type', BeritaIndo.AntaraNews.getNews)
 router.get('/v1/kumparan-news/', BeritaIndo.KumparanNews.getAllNews)
+router.get('/v1/okezone-news/', BeritaIndo.OkezoneNews.getAllNews)
+router.get('/v1/okezone-news/:type', BeritaIndo.OkezoneNews.getNews)
 
 router.all('*', BeritaIndo.notFound)
 

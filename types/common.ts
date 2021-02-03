@@ -8,6 +8,8 @@ export type TypeTempo = "nasional" | "bisnis" | "metro" | "dunia" | "bola" | "sp
 
 export type TypeAntara = "terkini" | "top-news" | "politik" | "hukum" | "ekonomi" | "metro" | "sepakbola" | "olahraga" | "humaniora" | "lifestyle" | "hiburan" | "dunia" | "infografik" | "tekno" | "otomotif" | "warta-bumi" | "rilis-pers"
 
+export type TypeOkezone = "breaking" | "sport" | "economy" | "lifestyle" | "celebrity" | "bola" | "techno"
+
 export interface DataResponse {
     code: number
     status?: string

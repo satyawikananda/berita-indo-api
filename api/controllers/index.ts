@@ -4,6 +4,7 @@ import RepublikaNews from './newshandler/RepublikaNews'
 import TempoNews from './newshandler/TempoNews'
 import AntaraNews from './newshandler/AntaraNews'
 import KumparanNews from './newshandler/KumparanNews'
+import OkezoneNews from './newshandler/OkezoneNews'
 import notFound from './404'
 
 export default {
@@ -13,5 +14,6 @@ export default {
     TempoNews,
     AntaraNews,
     KumparanNews,
+    OkezoneNews,
     notFound
 }
