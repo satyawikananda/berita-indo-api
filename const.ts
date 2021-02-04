@@ -15,3 +15,4 @@ export const RSS_OKEZONE = {
     techno: 'https://sindikasi.okezone.com/index.php/rss/16/RSS2.0'
 }
 export const RSS_LIPUTAN6: string = 'https://feed.liputan6.com/rss'
+export const RSS_BBC: string = 'https://feeds.bbci.co.uk/indonesia/{type}/rss.xml'

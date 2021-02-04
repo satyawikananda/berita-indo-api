@@ -39,7 +39,7 @@ Berita Indo API adalah sebuah API yang menampilkan banyak berita di Indonesia se
   - [x] Berita Kumparan
   - [x] Berita Okezone
   - [x] Berita Liputan 6
-  - [ ] Berita BBC
+  - [x] Berita BBC
   - [ ] Berita Tribun
 - Tingkatkan API
   - [ ] Cari data berita

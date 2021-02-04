@@ -10,6 +10,8 @@ export type TypeAntara = "terkini" | "top-news" | "politik" | "hukum" | "ekonomi
 
 export type TypeOkezone = "breaking" | "sport" | "economy" | "lifestyle" | "celebrity" | "bola" | "techno"
 
+export type TypeBbc = "dunia" | "berita_indonesia" | "olahraga" | "majalah" | "multimedia"
+
 export interface DataResponse {
     code: number
     status?: string

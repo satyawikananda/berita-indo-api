@@ -35,13 +35,21 @@ router.get('/', (_, res: Response) => {
                 listType: ["terkini", "top-news", "politik", "hukum", "ekonomi", "metro", "sepakbola", "olahraga", "humaniora", "lifestyle", "hiburan", "dunia", "infografik", "tekno", "otomotif", "warta-bumi", "rilis-pers"],
                 example: "https://berita-indo-api.vercel.app/v1/antara-news/hukum"
             },
-            "Kumparan News": {
-                all: "https://berita-indo-api.vercel.app/v1/kumparan-news",
-            },
             "Okezone News": {
                 all: "https://berita-indo-api.vercel.app/v1/okezone-news",
                 listType: ["breaking", "sport", "economy", "lifestyle", "celebrity", "bola", "techno"],
                 example: "https://berita-indo-api.vercel.app/v1/okezone-news/bola",
+            },
+            "BBC News": {
+                all: "https://berita-indo-api.vercel.app/v1/bbc-news",
+                listType: ["dunia", "berita_indonesia", "olahraga", "majalah", "multimedia"],
+                example: "https://berita-indo-api.vercel.app/v1/bbc-news/dunia",
+            },
+            "Kumparan News": {
+                all: "https://berita-indo-api.vercel.app/v1/kumparan-news",
+            },
+            "Liputan 6 News": {
+                all: "https://berita-indo-api.vercel.app/v1/liputan6-news",
             },
         },
         author: "Satya Wikananda",
@@ -62,6 +70,8 @@ router.get('/v1/kumparan-news/', BeritaIndo.KumparanNews.getAllNews)
 router.get('/v1/okezone-news/', BeritaIndo.OkezoneNews.getAllNews)
 router.get('/v1/okezone-news/:type', BeritaIndo.OkezoneNews.getNews)
 router.get('/v1/liputan6-news/', BeritaIndo.Liputan6News.getAllNews)
+router.get('/v1/bbc-news/:type', BeritaIndo.BbcNews.getNews)
+router.get('/v1/bbc-news/', BeritaIndo.BbcNews.getAllNews)
 
 router.all('*', BeritaIndo.notFound)
 
