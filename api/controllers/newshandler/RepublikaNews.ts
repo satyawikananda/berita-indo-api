@@ -12,9 +12,14 @@ class RepublikaNews {
         try {
             const { type }: Partial<Params> = req.params
             let url = `${RSS_REPUBLIKA_NEWS}${type}`
-            const result = await parserRss(url)
+            const result = await parserRss(url, {
+                item: ['media:content']
+            })
             const data = result.items.map((items) => {
                 items.description = items.contentSnippet
+                items.image = items['media:content']['$']['url']
+                items.title = items.title.trim()
+                delete items['media:content']
                 delete items.contentSnippet
                 delete items.pubDate
                 delete items.content
@@ -43,9 +48,14 @@ class RepublikaNews {
     static async getAllNews(_, res: Response) {
         try {
             let url = RSS_REPUBLIKA_NEWS
-            const result = await parserRss(url)
+            const result = await parserRss(url, {
+                item: ['media:content']
+            })
             const data = result.items.map((items) => {
                 items.description = items.contentSnippet
+                items.image = items['media:content']['$']['url']
+                items.title = items.title.trim()
+                delete items['media:content']
                 delete items.contentSnippet
                 delete items.pubDate
                 delete items.content
