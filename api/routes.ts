@@ -61,6 +61,7 @@ router.get('/v1/antara-news/:type', BeritaIndo.AntaraNews.getNews)
 router.get('/v1/kumparan-news/', BeritaIndo.KumparanNews.getAllNews)
 router.get('/v1/okezone-news/', BeritaIndo.OkezoneNews.getAllNews)
 router.get('/v1/okezone-news/:type', BeritaIndo.OkezoneNews.getNews)
+router.get('/v1/liputan6-news/', BeritaIndo.Liputan6News.getAllNews)
 
 router.all('*', BeritaIndo.notFound)
 

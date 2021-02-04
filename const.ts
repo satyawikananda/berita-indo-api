@@ -14,3 +14,4 @@ export const RSS_OKEZONE = {
     bola: 'https://sindikasi.okezone.com/index.php/rss/14/RSS2.0',
     techno: 'https://sindikasi.okezone.com/index.php/rss/16/RSS2.0'
 }
+export const RSS_LIPUTAN6: string = 'https://feed.liputan6.com/rss'

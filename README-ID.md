@@ -26,6 +26,7 @@ Berita Indo API adalah sebuah API yang menampilkan banyak berita di Indonesia se
 - `/v1/kumparan-news/` : Mendapatkan seluruh berita terkini dari Berita Kumparan
 - `/v1/okezone-news` : Mendapatkan seluruh berita terkini dari Berita Okezone.
 - `/v1/okezone-news/:type` : Mendapatkan data berita secara spesifik dari tipe berita di Berita Okezone.
+- `/v1/liputan6-news` : Mendapatkan seluruh berita terkini dari Berita Liputan 6.
 
 ## Daftar yang harus dilakukan
 
@@ -37,7 +38,7 @@ Berita Indo API adalah sebuah API yang menampilkan banyak berita di Indonesia se
   - [x] Berita Antara
   - [x] Berita Kumparan
   - [x] Berita Okezone
-  - [ ] Berita Liputan 6
+  - [x] Berita Liputan 6
   - [ ] Berita BBC
   - [ ] Berita Tribun
 - Tingkatkan API
