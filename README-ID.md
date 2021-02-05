@@ -81,6 +81,8 @@ Untuk teknologi-nya, projek ini menggunakan:
 
 Jika Anda menggunakan API ini di aplikasi Anda, Anda bisa mendaftarkan projek Anda di bawah ini :
 
+- [Berita.id](https://github.com/NicolaDonoastro/berita.id) Platform berita minimalis oleh [NicolaDonoastro](https://github.com/NicolaDonoastro)
+
 # Dukung saya
 
 Anda bisa mendukung saya di [Karya Karsa](https://karyakarsa.com/satyawikananda) dan [Trakteer](https://trakteer.id/satya-wikananda/)
