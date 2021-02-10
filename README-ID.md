@@ -27,6 +27,8 @@ Berita Indo API adalah sebuah API yang menampilkan banyak berita di Indonesia se
 - `/v1/okezone-news` : Mendapatkan seluruh berita terkini dari Berita Okezone.
 - `/v1/okezone-news/:type` : Mendapatkan data berita secara spesifik dari tipe berita di Berita Okezone.
 - `/v1/liputan6-news` : Mendapatkan seluruh berita terkini dari Berita Liputan 6.
+- `/v1/bbc-news/` : Mendapatkan seluruh berita terkini dari Berita BBC.
+- `/v1/bbc-news/:type/` : Mendapatkan data berita secara spesifik dari tipe berita di Berita BBC.
 
 ## Daftar yang harus dilakukan
 
