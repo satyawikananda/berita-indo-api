@@ -18,7 +18,7 @@ class KumparanNews {
                 delete items['dc:creator']
                 delete items['content:encoded']
                 delete items['content:encodedSnippet']
-                items.images = {
+                items.image = {
                     small: items.enclosure.url.replace('w_480', 'w_240'),
                     medium: items.enclosure.url,
                     large: items.enclosure.url.replace('w_480', 'w_720'),

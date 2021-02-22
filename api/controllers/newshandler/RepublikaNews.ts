@@ -17,7 +17,9 @@ class RepublikaNews {
             })
             const data = result.items.map((items) => {
                 items.description = items.contentSnippet
-                items.image = items['media:content']['$']['url']
+                items.image = {
+                    small: items['media:content']['$']['url']
+                }
                 items.title = items.title.trim()
                 delete items['media:content']
                 delete items.contentSnippet
@@ -53,7 +55,9 @@ class RepublikaNews {
             })
             const data = result.items.map((items) => {
                 items.description = items.contentSnippet
-                items.image = items['media:content']['$']['url']
+                items.image = {
+                    small: items['media:content']['$']['url']
+                }
                 items.title = items.title.trim()
                 delete items['media:content']
                 delete items.contentSnippet

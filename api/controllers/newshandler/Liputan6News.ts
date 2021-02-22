@@ -16,7 +16,9 @@ class Liputan6News {
             const url = RSS_LIPUTAN6
             const result = await parserRss(url)
             const data = result.items.map((items) => {
-                items.image = items.enclosure.url
+                items.image = {
+                    small: items.enclosure.url
+                }
                 items.description = limitString(items.contentSnippet, 300)
                 delete items.contentSnippet
                 delete items.pubDate
