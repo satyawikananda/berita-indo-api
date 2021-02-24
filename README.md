@@ -85,6 +85,7 @@ For the tech stack, Berita Indo API was using :
 If you use this API to your project application, you can register your project in this showcase below :
 
 - [Berita.id](https://github.com/NicolaDonoastro/berita.id) Minimalist news platform by [NicolaDonoastro](https://github.com/NicolaDonoastro)
+- [Mobile News App](https://github.com/indrapalijama/mobile-news-platform) Mobile Apps Platform by [Indrapalijama](https://github.com/indrapalijama)
 
 # Support Me
 
