@@ -19,3 +19,11 @@ export interface DataResponse {
     total?: number
     data?: unknown
 }
+
+export interface ListsApi {
+    label: string
+    all?: string
+    type?: string
+    listType?: string[]
+    example?:string
+}
