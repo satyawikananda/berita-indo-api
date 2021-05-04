@@ -99,5 +99,6 @@ Want to make this project better? You can contribute this project, I am very ope
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 ![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)
+![vercelbadge](https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg)
 
 Powered by Typescipt and vercel. Code licensed under [MIT License](https://raw.githubusercontent.com/satyawikananda/berita-indo-api/main/LICENSE?token=AH44ZFF4GHAMNS4WIL4FCC3ADZ4F6).
