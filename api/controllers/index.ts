@@ -7,6 +7,7 @@ import KumparanNews from './newshandler/KumparanNews'
 import OkezoneNews from './newshandler/OkezoneNews'
 import Liputan6News from './newshandler/Liputan6News'
 import BbcNews from './newshandler/BbcNews'
+import TribunNews from './newshandler/TribunNews'
 import notFound from './404'
 
 export default {
@@ -19,5 +20,6 @@ export default {
     OkezoneNews,
     Liputan6News,
     BbcNews,
+    TribunNews,
     notFound
 }
