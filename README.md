@@ -31,6 +31,8 @@ Berita Indo API (or in English is Indonesian News API) is an API to display many
 - `/v1/liputan6-news` : Get all news data of Liputan 6 News
 - `/v1/bbc-news`: Get all news data of BBC News
 - `/v1/bbc-news/:type` : Get specific news data by type news of BBC News
+- `/v1/tribun-news`: Get all news data of Tribun News
+- `/v1/tribun-news/:type` : Get specific news data by type news of Tribun News
 
 ## To-do List
 
