@@ -42,7 +42,7 @@ Berita Indo API adalah sebuah API yang menampilkan banyak berita di Indonesia se
   - [x] Berita Okezone
   - [x] Berita Liputan 6
   - [x] Berita BBC
-  - [ ] Berita Tribun
+  - [x] Berita Tribun
 - Tingkatkan API
   - [ ] Cari data berita
   - [ ] Memberikan halaman pada data API
@@ -85,7 +85,6 @@ Jika Anda menggunakan API ini di aplikasi Anda, Anda bisa mendaftarkan projek An
 
 - [Berita.id](https://github.com/NicolaDonoastro/berita.id) Platform berita minimalis oleh [NicolaDonoastro](https://github.com/NicolaDonoastro)
 - [Mobile News App](https://github.com/indrapalijama/mobile-news-platform) Aplikasi Mobile oleh [Indrapalijama](https://github.com/indrapalijama)
-
 
 # Dukung saya
 

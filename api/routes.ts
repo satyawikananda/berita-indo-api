@@ -4,7 +4,7 @@ import BeritaIndo from './controllers/index'
 const router: Router = Router()
 
 router.get('/', (_, res: Response) => {
-    return res.status(200).send({
+    const data = {
         listApi: {
             "CNN News": {
                 all: "https://berita-indo-api.vercel.app/v1/cnn-news/",
@@ -51,10 +51,16 @@ router.get('/', (_, res: Response) => {
             "Liputan 6 News": {
                 all: "https://berita-indo-api.vercel.app/v1/liputan6-news",
             },
+            "Tribun News": {
+                all: "https://berita-indo-api.vercel.app/v1/tribun-news",
+                listType: ["bisnis", "superskor", "sport", "seleb", "lifestyle", "travel", "parapuan", "otomotif", "techno", "ramadan"],
+                example: "https://berita-indo-api.vercel.app/v1/tribun-news/techno",
+            },
         },
         author: "Satya Wikananda",
         source: "https://github.com/satyawikananda/berita-indo-api"
-    })
+    }
+    return res.status(200).send(data)
 })
 
 router.get('/v1/cnn-news/', BeritaIndo.CnnNews.getAllNews)
@@ -72,6 +78,8 @@ router.get('/v1/okezone-news/:type', BeritaIndo.OkezoneNews.getNews)
 router.get('/v1/liputan6-news/', BeritaIndo.Liputan6News.getAllNews)
 router.get('/v1/bbc-news/:type', BeritaIndo.BbcNews.getNews)
 router.get('/v1/bbc-news/', BeritaIndo.BbcNews.getAllNews)
+router.get('/v1/tribun-news/:type', BeritaIndo.TribunNews.getNews)
+router.get('/v1/tribun-news/', BeritaIndo.TribunNews.getAllNews)
 
 router.all('*', BeritaIndo.notFound)
 
