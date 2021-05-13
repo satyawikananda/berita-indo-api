@@ -1,3 +1,8 @@
+/*
+    This RSS feed maybe isn't available again
+    and this API will be unused
+*/
+
 import { Response } from 'express'
 import { parserRss } from '../../../utils/parser'
 import { RSS_LIPUTAN6 } from '../../../const'
