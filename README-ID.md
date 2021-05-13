@@ -42,7 +42,7 @@ Berita Indo API adalah sebuah API yang menampilkan banyak berita di Indonesia se
   - [x] Berita Antara
   - [x] Berita Kumparan
   - [x] Berita Okezone
-  - [x] Berita Liputan 6
+  - [x] ~~Berita Liputan 6~~ (API berita ini mungkin tidak tersedia lagi, dikarenakan ada isu RSS dari Liputan6)
   - [x] Berita BBC
   - [x] Berita Tribun
 - Tingkatkan API

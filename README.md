@@ -34,6 +34,8 @@ Berita Indo API (or in English is Indonesian News API) is an API to display many
 - `/v1/tribun-news`: Get all news data of Tribun News
 - `/v1/tribun-news/:type` : Get specific news data by type news of Tribun News
 
+> Each API Endpoint have a query paramaters named 'title', and this query parameters will be usefull if you want to search the API data by the title.
+
 ## To-do List
 
 - News
@@ -44,11 +46,11 @@ Berita Indo API (or in English is Indonesian News API) is an API to display many
   - [x] Antara News
   - [x] Kumparan News
   - [x] Okezone News
-  - [x] Liputan 6 News
+  - [x] ~~Liputan 6 News~~ (This RSS feed maybe isn't available again)
   - [x] BBC News
   - [x] Tribun News
 - Improve API
-  - [ ] Search data news
+  - [x] Search data news
   - [ ] Paginate data
 
 ## Installation
