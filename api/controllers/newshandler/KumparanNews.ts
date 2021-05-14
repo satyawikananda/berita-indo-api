@@ -1,12 +1,17 @@
-import { Response } from 'express'
+import { Response, Request } from 'express'
 import { parserRss } from '../../../utils/parser'
 import { RSS_KUMPARAN_NEWS } from '../../../const'
 import { DataResponse } from '../../../types/common'
+import { useSearch } from '../../../utils/useSearch'
 
+interface Title {
+    title: string
+}
 class KumparanNews {
-    static async getAllNews(_, res: Response) {
+    static async getAllNews(req: Request, res: Response) {
         try {
-            let url = RSS_KUMPARAN_NEWS
+            const { title }: Partial<Title> = req.query
+            const url = RSS_KUMPARAN_NEWS
             const result = await parserRss(url)
             const data = result.items.map((items) => {
                 items.description = items.contentSnippet
@@ -27,6 +32,22 @@ class KumparanNews {
                 delete items.enclosure
                 return items
             })
+            if(title !== undefined) {
+                const search = useSearch(data, title)
+                let dataSearch:any = []
+                search.map((items) => {
+                    dataSearch.push(items.item)
+                })
+                const dataResponse: DataResponse = {
+                    code: 200,
+                    status: "OK",
+                    messages: `Result of all news in Kumaparan News with title search: ${title}`,
+                    total: search.length,
+                    data: dataSearch
+                }
+
+                return res.status(200).send(dataResponse)
+            }
             const dataResponse: DataResponse = {
                 code: 200,
                 status: "OK",

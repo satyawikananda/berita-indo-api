@@ -3,17 +3,22 @@ import { parserRss } from '../../../utils/parser'
 import { replaceQueryParams } from '../../../utils/replaceQueryParams'
 import { RSS_CNBC_NEWS } from '../../../const'
 import { TypeCnbc, DataResponse } from '../../../types/common'
+import { useSearch } from '../../../utils/useSearch'
 
 interface Params {
     type?: TypeCnbc
+}
+
+interface Title {
+    title: string
 }
 
 class CnbcNews {
     static async getNews(req: Request, res: Response) {
         try {
             const { type }: Partial<Params> = req.params
+            const { title }: Partial<Title> = req.query
             let url = RSS_CNBC_NEWS.replace('{type}', type)
-            
             const result = await parserRss(url)
             const data = result.items.map((items) => {
                 const image = replaceQueryParams(items.enclosure.url, 'q', '100')
@@ -29,6 +34,21 @@ class CnbcNews {
                 delete items.enclosure
                 return items
             })
+            if(title !== undefined) {
+                const search = useSearch(data, title)
+                let dataSearch:any = []
+                search.map((items) => {
+                    dataSearch.push(items.item)
+                })
+                const dataResponse: DataResponse = {
+                    code: 200,
+                    status: "OK",
+                    messages: `Result of type ${type} news in CNBC News with title search: ${title}`,
+                    total: search.length,
+                    data: dataSearch
+                }
+                return res.status(200).send(dataResponse)
+            }
             const dataResponse: DataResponse = {
                 code: 200,
                 status: "OK",
@@ -44,10 +64,10 @@ class CnbcNews {
         }
     }
 
-    static async getAllNews(_, res: Response) {
+    static async getAllNews(req: Request, res: Response) {
         try {
-            let url = RSS_CNBC_NEWS.replace('/{type}', '')
-            
+            const url = RSS_CNBC_NEWS.replace('/{type}', '')
+            const { title }: Partial<Title> = req.query
             const result = await parserRss(url)
             const data = result.items.map((items) => {
                 const image = replaceQueryParams(items.enclosure.url, 'q', '100')
@@ -63,6 +83,22 @@ class CnbcNews {
                 delete items.enclosure
                 return items
             })
+            if(title !== undefined) {
+                const search = useSearch(data, title)
+                let dataSearch:any = []
+                search.map((items) => {
+                    dataSearch.push(items.item)
+                })
+                const dataResponse: DataResponse = {
+                    code: 200,
+                    status: "OK",
+                    messages: `Result of all news in CNBC News with title search: ${title}`,
+                    total: search.length,
+                    data: dataSearch
+                }
+
+                return res.status(200).send(dataResponse)
+            }
             const dataResponse: DataResponse = {
                 code: 200,
                 status: "OK",
