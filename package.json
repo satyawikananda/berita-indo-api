@@ -1,6 +1,6 @@
 {
   "name": "berita-indo-api",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An api to display news in Indonesia",
   "main": "index.js",
   "scripts": {
