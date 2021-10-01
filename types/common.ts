@@ -12,7 +12,7 @@ export type TypeOkezone = "breaking" | "sport" | "economy" | "lifestyle" | "cele
 
 export type TypeBbc = "dunia" | "berita_indonesia" | "olahraga" | "majalah" | "multimedia"
 
-export type TypeTribun = "bisnis" | "superskor" | "sport" | "seleb" | "lifestyle" | "travel" | "parapuan" | "otomotif" | "techno" | "ramadan"
+export type TypeTribun = "bisnis" | "superskor" | "sport" | "seleb" | "lifestyle" | "travel" | "parapuan" | "otomotif" | "techno" | "ramadan" | "weather"
 
 export interface DataResponse {
     code: number
