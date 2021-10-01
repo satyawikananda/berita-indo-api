@@ -1,4 +1,4 @@
-export type TypeCnn = "nasional" | "internasional" | "ekonomi" | "olahraga" | "teknologi" | "hiburan" | "gaya-hidup";
+export type TypeCnn = "nasional" | "internasional" | "ekonomi" | "olahraga" | "teknologi" | "hiburan" | "gaya-hidup" | "cuaca";
 
 export type TypeCnbc = "market" | "investment" | "news" | "entrepreneur" | "syariah" | "tech" | "lifestyle"
 
