@@ -53,8 +53,13 @@ router.get('/', (_, res: Response) => {
             },
             "Tribun News": {
                 all: "https://berita-indo-api.vercel.app/v1/tribun-news",
+                zone: ["jakarta", "jabar", "mataram", "mataraman", "medan", "padang", "flores", "sulbar", "ambon",
+                    "wartakota", "bogor", "pantura", "madura", "palembang", "pekanbaru", "banjarmasin", "pontianak", "papua", "bekasi",
+                    "cirebon", "jogja", "bali", "bangka", "jambi", "kaltim", "palu", "papuabarat", "banten", "jateng", "jatim", "aceh",
+                    "batam", "sumsel", "kalteng", "makassar", "tangerang", "solo", "surabaya", "prohaba", "belitung", "lampung", "kaltara",
+                    "lombok", "depok", "banyumas", "suryamalang", "sultra", "babel", "kupang", "manado", "ternate"],
                 listType: ["bisnis", "superskor", "sport", "seleb", "lifestyle", "travel", "parapuan", "otomotif", "techno", "ramadan"],
-                example: "https://berita-indo-api.vercel.app/v1/tribun-news/techno",
+                example: "https://berita-indo-api.vercel.app/v1/tribun-news/jakarta/techno",
             },
         },
         author: "Satya Wikananda",
@@ -78,8 +83,8 @@ router.get('/v1/okezone-news/:type', BeritaIndo.OkezoneNews.getNews)
 router.get('/v1/liputan6-news/', BeritaIndo.Liputan6News.getAllNews)
 router.get('/v1/bbc-news/:type', BeritaIndo.BbcNews.getNews)
 router.get('/v1/bbc-news/', BeritaIndo.BbcNews.getAllNews)
-router.get('/v1/tribun-news/:type', BeritaIndo.TribunNews.getNews)
-router.get('/v1/tribun-news/', BeritaIndo.TribunNews.getAllNews)
+router.get('/v1/tribun-news/:zone/:type', BeritaIndo.TribunNews.getNews)
+router.get('/v1/tribun-news/:zone?', BeritaIndo.TribunNews.getAllNews)
 
 router.all('*', BeritaIndo.notFound)
 

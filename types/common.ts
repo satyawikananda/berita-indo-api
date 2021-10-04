@@ -14,6 +14,11 @@ export type TypeBbc = "dunia" | "berita_indonesia" | "olahraga" | "majalah" | "m
 
 export type TypeTribun = "bisnis" | "superskor" | "sport" | "seleb" | "lifestyle" | "travel" | "parapuan" | "otomotif" | "techno" | "ramadan"
 
+export type ZoneTribun = "jakarta" | "jabar" | "mataram" | "mataraman" | "medan" | "padang" | "flores" | "sulbar" | "ambon" |
+    "wartakota" | "bogor" | "pantura" | "madura" | "palembang" | "pekanbaru" | "banjarmasin" | "pontianak" | "papua" | "bekasi" |
+    "cirebon" | "jogja" | "bali" | "bangka" | "jambi" | "kaltim" | "palu" | "papuabarat" | "banten" | "jateng" | "jatim" | "aceh" |
+    "batam" | "sumsel" | "kalteng" | "makassar" | "tangerang" | "solo" | "surabaya" | "prohaba" | "belitung" | "lampung" | "kaltara" |
+    "lombok" | "depok" | "banyumas" | "suryamalang" | "sultra" | "babel" | "kupang" | "manado" | "ternate"
 export interface DataResponse {
     code: number
     status?: string
@@ -27,5 +32,5 @@ export interface ListsApi {
     all?: string
     type?: string
     listType?: string[]
-    example?:string
+    example?: string
 }
