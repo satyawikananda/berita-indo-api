@@ -19,6 +19,8 @@ export type ZoneTribun = "jakarta" | "jabar" | "mataram" | "mataraman" | "medan"
     "cirebon" | "jogja" | "bali" | "bangka" | "jambi" | "kaltim" | "palu" | "papuabarat" | "banten" | "jateng" | "jatim" | "aceh" |
     "batam" | "sumsel" | "kalteng" | "makassar" | "tangerang" | "solo" | "surabaya" | "prohaba" | "belitung" | "lampung" | "kaltara" |
     "lombok" | "depok" | "banyumas" | "suryamalang" | "sultra" | "babel" | "kupang" | "manado" | "ternate"
+
+export type TypeJawaPos = "nasional" | "entertainment" | "pendidikan" | "hukum-kriminal" | "pemilihan" | "sepak-bola" | "jabodetabek" | "internasional" | "lifestyle" | "kesehatan" | "infrastruktur" | "features" | "oto-dan-tekno" | "arsitektur-dan-desain" | "art-space" | "opini" | "wisata-dan-kuliner" | "hoax-atau-bukan"
 export interface DataResponse {
     code: number
     status?: string

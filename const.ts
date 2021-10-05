@@ -17,3 +17,4 @@ export const RSS_OKEZONE = {
 export const RSS_LIPUTAN6: string = 'https://feed.liputan6.com/rss'
 export const RSS_BBC: string = 'https://feeds.bbci.co.uk/indonesia/{type}/rss.xml'
 export const RSS_TRIBUN: string = 'https://{zone}.tribunnews.com/rss/'
+export const RSS_JAWAPOS: string = 'https://www.jawapos.com/{type}/feed/'

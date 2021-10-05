@@ -85,6 +85,7 @@ router.get('/v1/bbc-news/:type', BeritaIndo.BbcNews.getNews)
 router.get('/v1/bbc-news/', BeritaIndo.BbcNews.getAllNews)
 router.get('/v1/tribun-news/:zone/:type', BeritaIndo.TribunNews.getNews)
 router.get('/v1/tribun-news/:zone?', BeritaIndo.TribunNews.getAllNews)
+router.get('/v1/jawa-pos/:type', BeritaIndo.JawaPos.getAllNews)
 
 router.all('*', BeritaIndo.notFound)
 
