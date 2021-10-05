@@ -32,7 +32,7 @@ Berita Indo API (or in English is Indonesian News API) is an API to display many
 - `/v1/bbc-news`: Get all news data of BBC News
 - `/v1/bbc-news/:type` : Get specific news data by type news of BBC News
 - `/v1/tribun-news`: Get all news data of Tribun News
-- `/v1/tribun-news/:type` : Get specific news data by type news of Tribun News
+- `/v1/tribun-news/:zone/:type` : Get specific news data by zone and type news of Tribun News
 
 > Each API Endpoint have a query paramaters named 'title', and this query parameters will be usefull if you want to search the API data by the title.
 
