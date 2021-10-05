@@ -1,0 +1,28 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "satyawikananda",
+      "name": "I Gusti Ngurah Satya Wikananda",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33148052?v=4",
+      "profile": "https://satyawikananda.vercel.app",
+      "contributions": [
+        "code",
+        "maintenance",
+        "bug",
+        "ideas",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "berita-indo-api",
+  "projectOwner": "satyawikananda",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

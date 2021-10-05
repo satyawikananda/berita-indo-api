@@ -1,4 +1,5 @@
 <div align="center">
+
 <h1>Berita Indo API</h1>
 
 <p>An api to display news in Indonesia</p>
@@ -99,6 +100,26 @@ You can support me on [Karya Karsa](https://karyakarsa.com/satyawikananda) and [
 # Contribution
 
 Want to make this project better? You can contribute this project, I am very open if there are contributions to this project.
+
+# Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://satyawikananda.vercel.app"><img src="https://avatars.githubusercontent.com/u/33148052?v=4?s=100" width="100px;" alt=""/><br /><sub><b>I Gusti Ngurah Satya Wikananda</b></sub></a><br /><a href="https://github.com/satyawikananda/berita-indo-api/commits?author=satyawikananda" title="Code">💻</a> <a href="#maintenance-satyawikananda" title="Maintenance">🚧</a> <a href="https://github.com/satyawikananda/berita-indo-api/issues?q=author%3Asatyawikananda" title="Bug reports">🐛</a> <a href="#ideas-satyawikananda" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/satyawikananda/berita-indo-api/commits?author=satyawikananda" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
 ---
 
