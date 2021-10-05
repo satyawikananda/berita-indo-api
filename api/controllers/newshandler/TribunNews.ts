@@ -53,6 +53,11 @@ class TribunNews {
             }
             return res.status(200).send(dataResponse)
         } catch(e) {
+            if(e.message.includes('404')){
+                return res.status(404).send({
+                    message: "Type not found for this zone"
+                })
+            }
             return res.status(500).send({
                 message: `${e.message}`
             })
