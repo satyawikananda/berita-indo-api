@@ -38,6 +38,15 @@
         "bug",
         "ideas"
       ]
+    },
+    {
+      "login": "nekoding",
+      "name": "Enggar Tivandi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64598048?v=4",
+      "profile": "https://kirintux.ninja/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
