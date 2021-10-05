@@ -4,12 +4,12 @@ import { RSS_JAWAPOS } from '../../../const'
 import { DataResponse, TypeJawaPos } from '../../../types/common'
 import { useSearch } from '../../../utils/useSearch'
 
-interface Title {
-    title: string
-}
-
 interface Params {
     type?: TypeJawaPos
+}
+
+interface Title {
+    title: string
 }
 
 class JawaPosNews {
@@ -17,9 +17,8 @@ class JawaPosNews {
         try {
             const { type }: Partial<Params> = req.params
             const { title }: Partial<Title> = req.query
-            const url = RSS_JAWAPOS.replace('{type}', type)
+            const url = RSS_JAWAPOS.replace('{type}', type ?? "")
             const result = await parserRss(url)
-            console.log(url)
             const data = result.items.map((items) => {
                 delete items.creator
                 delete items.pubDate
@@ -31,26 +30,26 @@ class JawaPosNews {
                 delete items['dc:creator']
                 return items
             })
-            // if(title !== undefined) {
-            //     const search = useSearch(data, title)
-            //     let dataSearch:any = []
-            //     search.map((items) => {
-            //         dataSearch.push(items.item)
-            //     })
-            //     const dataResponse: DataResponse = {
-            //         code: 200,
-            //         status: "OK",
-            //         messages: `Result of all news in Kumaparan News with title search: ${title}`,
-            //         total: search.length,
-            //         data: dataSearch
-            //     }
+            if(title !== undefined) {
+                const search = useSearch(data, title)
+                let dataSearch:any = []
+                search.map((items) => {
+                    dataSearch.push(items.item)
+                })
+                const dataResponse: DataResponse = {
+                    code: 200,
+                    status: "OK",
+                    messages: `Result of type ${type} news in Jawa Pos News with title search: ${title}`,
+                    total: search.length,
+                    data: dataSearch
+                }
 
-            //     return res.status(200).send(dataResponse)
-            // }
+                return res.status(200).send(dataResponse)
+            }
             const dataResponse: DataResponse = {
                 code: 200,
                 status: "OK",
-                messages: `Result of all news in Jawa Pos`,
+                messages: `Result of all news in Jawa Pos News`,
                 total: data.length,
                 data: data
             }
