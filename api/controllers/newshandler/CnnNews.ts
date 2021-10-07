@@ -35,7 +35,7 @@ class CnnNews {
             })
             if(title !== undefined) {
                 const search = useSearch(data, title)
-                let dataSearch:any = []
+                let dataSearch: any = []
                 search.map((items) => {
                     dataSearch.push(items.item)
                 })
@@ -85,7 +85,7 @@ class CnnNews {
             })
             if(title !== undefined) {
                 const search = useSearch(data, title)
-                let dataSearch:any = []
+                let dataSearch: any = []
                 search.map((items) => {
                     dataSearch.push(items.item)
                 })

@@ -69,6 +69,15 @@ router.get('/', (_, res: Response) => {
             "Vice": {
                 all: "https://berita-indo-api.vercel.app/v1/vice",
             },
+            "Suara News": {
+                all: "https://berita-indo-api.vercel.app/v1/suara",
+                listType: ["news", "bisnis", "lifestyle", "entertainment", "otomotif", "tekno", "health", "mostpopular", "wawancara", "pressrelease"],
+                example: "https://berita-indo-api.vercel.app/v1/suara/bisnis"
+            },
+            "VOA Indonesia": {
+                all: "https://berita-indo-api.vercel.app/v1/voa",
+                example: "https://berita-indo-api.vercel.app/v1/voa"
+            }
         },
         author: "Satya Wikananda",
         source: "https://github.com/satyawikananda/berita-indo-api"
@@ -95,6 +104,9 @@ router.get('/v1/tribun-news/:zone/:type', BeritaIndo.TribunNews.getNews)
 router.get('/v1/tribun-news/:zone?', BeritaIndo.TribunNews.getAllNews)
 router.get('/v1/jawa-pos/:type?', BeritaIndo.JawaPosNews.getAllNews)
 router.get('/v1/vice/:page?', BeritaIndo.ViceNews.getAllNews)
+router.get('/v1/suara/', BeritaIndo.SuaraNews.getAllNews)
+router.get('/v1/suara/:type', BeritaIndo.SuaraNews.getNews)
+router.get('/v1/voa/', BeritaIndo.VOAIndonesia.getAllNews)
 
 router.all('*', BeritaIndo.notFound)
 

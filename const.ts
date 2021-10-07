@@ -19,3 +19,5 @@ export const RSS_BBC: string = 'https://feeds.bbci.co.uk/indonesia/{type}/rss.xm
 export const RSS_TRIBUN: string = 'https://{zone}.tribunnews.com/rss/'
 export const RSS_JAWAPOS: string = 'https://www.jawapos.com/{type}/feed/'
 export const RSS_VICE: string = 'https://www.vice.com/id/rss?locale=id_id{page}'
+export const RSS_SUARA: string = 'https://www.suara.com/rss/{type}'
+export const RSS_VOA: string = 'https://www.voaindonesia.com/api/zmgqoe$moi'
