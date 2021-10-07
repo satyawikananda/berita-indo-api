@@ -25,8 +25,6 @@ class VOAIndonesia {
         delete items.contentSnippet
         delete items.pubDate
         delete items.author
-        delete items['content:encoded']
-        delete items['content:encodedSnippet']
         delete items.content
         delete items.guid
         delete items.categories

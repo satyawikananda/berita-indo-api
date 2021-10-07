@@ -77,6 +77,11 @@ router.get('/', (_, res: Response) => {
             "VOA Indonesia": {
                 all: "https://berita-indo-api.vercel.app/v1/voa",
                 example: "https://berita-indo-api.vercel.app/v1/voa"
+            },
+            "Investing Indonesia": {
+                all: "https://berita-indo-api.vercel.app/v1/invest",
+                listType: ["forex", "populer", "politik", "komoditasberjangka", "saham", "indikatorekonomi", "ekonomi"],
+                example: "https://berita-indo-api.vercel.app/v1/invest/forex"
             }
         },
         author: "Satya Wikananda",
@@ -107,6 +112,8 @@ router.get('/v1/vice/:page?', BeritaIndo.ViceNews.getAllNews)
 router.get('/v1/suara/', BeritaIndo.SuaraNews.getAllNews)
 router.get('/v1/suara/:type', BeritaIndo.SuaraNews.getNews)
 router.get('/v1/voa/', BeritaIndo.VOAIndonesia.getAllNews)
+router.get('/v1/invest/', BeritaIndo.InvestingID.getAllNews)
+router.get('/v1/invest/:type', BeritaIndo.InvestingID.getNews)
 
 router.all('*', BeritaIndo.notFound)
 

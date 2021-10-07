@@ -24,12 +24,15 @@ export type TypeJawaPos = "nasional" | "entertainment" | "pendidikan" | "hukum-k
 
 export type TypeSuara = "news" | "bisnis" | "lifestyle" | "entertainment" | "otomotif" | "tekno" | "health" | "mostpopular" | "wawancara" | "pressrelease"
 
+export type TypeInvestingID = "forex" | "populer" | "politik" | "komoditasberjangka" | "saham" | "indikatorekonomi" | "ekonomi"
+
 export interface DataResponse {
     code: number
     status?: string
     messages: string
     total?: number
-    data?: unknown
+    data?: unknown,
+    url?: string
 }
 
 export interface ListsApi {

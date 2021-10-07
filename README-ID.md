@@ -37,6 +37,8 @@ Berita Indo API adalah sebuah API yang menampilkan banyak berita di Indonesia se
 - `/v1/suara/`:  Mendapatkan seluruh berita terkini dari Berita Suara
 - `/v1/suara/:type`:  Mendapatkan data berita secara spesifik dari tipe berita di Berita SUARA
 - `/v1/voa/`:  Mendapatkan seluruh berita terkini dari VOA Indonesia
+- `/v1/invest/`:  Mendapatkan seluruh berita terkini dari Investing Indonesia
+- `/v1/invest/:type`:  Mendapatkan data berita secara spesifik dari tipe berita di Investing Indonesia
 
 ## Daftar yang harus dilakukan
 
@@ -55,6 +57,7 @@ Berita Indo API adalah sebuah API yang menampilkan banyak berita di Indonesia se
   - [x] Vice 
   - [x] Berita Suara 
   - [x] VOA Indonesia 
+  - [x] Investing Indonesia 
 - Tingkatkan API
   - [x] Cari data berita
   - [ ] Memberikan halaman pada data API

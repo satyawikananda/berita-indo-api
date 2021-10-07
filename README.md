@@ -40,6 +40,8 @@ Berita Indo API (or in English is Indonesian News API) is an API to display many
 - `/v1/suara/`:  Get all news data of SUARA News
 - `/v1/suara/:type`:  Get specific news data by type news of SUARA News
 - `/v1/voa/`:  Get all news data of VOA Indonesia
+- `/v1/invest/`:  Get all news data of Investing Indonesia
+- `/v1/invest/:type`:  Get specific news data by type news of Investing Indonesia
 
 > Each API Endpoint have a query paramaters named 'title', and this query parameters will be usefull if you want to search the API data by the title.
 
@@ -60,6 +62,7 @@ Berita Indo API (or in English is Indonesian News API) is an API to display many
   - [x] Vice 
   - [x] Suara News 
   - [x] VOA Indonesia 
+  - [x] Investing Indonesia 
 - Improve API
   - [x] Search data news
   - [ ] Paginate data

@@ -3,7 +3,6 @@ import { RSS_SUARA } from '../../../const'
 import { TypeSuara, DataResponse } from '../../../types/common'
 import { replaceQueryParams } from '../../../utils/replaceQueryParams'
 import { parserRss } from '../../../utils/parser'
-import { useSearch } from '../../../utils/useSearch'
 
 interface Params {
   type?: TypeSuara
@@ -18,8 +17,6 @@ class SuaraNews {
       const data = result.items.map((items) => {
         const image = replaceQueryParams(items.enclosure.url, 'q', '100')
         delete items.pubDate
-        delete items['content:encoded']
-        delete items['content:encodedSnippet']
         delete items.content
         delete items.guid
         delete items.categories
@@ -52,8 +49,6 @@ class SuaraNews {
       const data = result.items.map((items) => {
         const image = replaceQueryParams(items.enclosure.url, 'q', '100')
         delete items.pubDate
-        delete items['content:encoded']
-        delete items['content:encodedSnippet']
         delete items.content
         delete items.guid
         delete items.categories

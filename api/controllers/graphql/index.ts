@@ -145,10 +145,37 @@ const listsApi: ListsApi[] = [
   {
     label: 'Suara News',
     all: 'https://berita-indo-api.vercel.app/v1/suara',
+    listType: [
+      'news',
+      'bisnis',
+      'lifestyle',
+      'entertainment',
+      'otomotif',
+      'tekno',
+      'health',
+      'mostpopular',
+      'wawancara',
+      'pressrelease'
+    ],
+    example: 'https://berita-indo-api.vercel.app/v1/suara/bisnis',
   },
   {
     label: 'VOA Indonesia',
     all: 'https://berita-indo-api.vercel.app/v1/voaindonesia',
+  },
+  {
+    label: 'Investing Indonesia',
+    all: 'https://berita-indo-api.vercel.app/v1/invest',
+    listType: [
+      'forex',
+      'populer',
+      'politik',
+      'komoditasberjangka',
+      'saham',
+      'indikatorekonomi',
+      'ekonomi'
+    ],
+    example: 'https://berita-indo-api.vercel.app/v1/invest/forex',
   },
 ];
 
