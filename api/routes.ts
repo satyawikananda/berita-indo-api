@@ -65,7 +65,10 @@ router.get('/', (_, res: Response) => {
                 all: "https://berita-indo-api.vercel.app/v1/jawa-pos",
                 listType: ["nasional", "entertainment", "pendidikan", "hukum-kriminal", "pemilihan", "sepak-bola", "jabodetabek", "internasional", "lifestyle", "kesehatan", "infrastruktur", "features", "oto-dan-tekno", "arsitektur-dan-desain", "art-space", "opini", "wisata-dan-kuliner", "hoax-atau-bukan"],
                 example: "https://berita-indo-api.vercel.app/v1/jawa-pos/nasional"
-            }
+            },
+            "Vice": {
+                all: "https://berita-indo-api.vercel.app/v1/vice",
+            },
         },
         author: "Satya Wikananda",
         source: "https://github.com/satyawikananda/berita-indo-api"
@@ -91,6 +94,7 @@ router.get('/v1/bbc-news/', BeritaIndo.BbcNews.getAllNews)
 router.get('/v1/tribun-news/:zone/:type', BeritaIndo.TribunNews.getNews)
 router.get('/v1/tribun-news/:zone?', BeritaIndo.TribunNews.getAllNews)
 router.get('/v1/jawa-pos/:type?', BeritaIndo.JawaPosNews.getAllNews)
+router.get('/v1/vice/:page?', BeritaIndo.ViceNews.getAllNews)
 
 router.all('*', BeritaIndo.notFound)
 
