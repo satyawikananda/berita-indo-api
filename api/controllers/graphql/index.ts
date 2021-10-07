@@ -146,6 +146,10 @@ const listsApi: ListsApi[] = [
     label: 'Suara News',
     all: 'https://berita-indo-api.vercel.app/v1/suara',
   },
+  {
+    label: 'VOA Indonesia',
+    all: 'https://berita-indo-api.vercel.app/v1/voaindonesia',
+  },
 ];
 
 export const resolvers = {

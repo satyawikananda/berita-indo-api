@@ -31,6 +31,12 @@ Berita Indo API adalah sebuah API yang menampilkan banyak berita di Indonesia se
 - `/v1/bbc-news/:type/` : Mendapatkan data berita secara spesifik dari tipe berita di Berita BBC.
 - `/v1/tribun-news`: Mendapatkan seluruh berita terkini dari Berita Tribun.
 - `/v1/tribun-news/:type` : Mendapatkan data berita secara spesifik dari tipe berita di Berita Tribun.
+- `/v1/jawa-pos/:type`: Mendapatkan seluruh berita terkini dari Berita Jawa Pos
+- `/v1/jawa-pos/:type`: Mendapatkan data berita secara spesifik dari tipe berita di Berita Jawa Pos
+- `/v1/vice/`:  Mendapatkan seluruh berita terkini dari Vice Indonesia
+- `/v1/suara/`:  Mendapatkan seluruh berita terkini dari Berita Suara
+- `/v1/suara/:type`:  Mendapatkan data berita secara spesifik dari tipe berita di Berita SUARA
+- `/v1/voa/`:  Mendapatkan seluruh berita terkini dari VOA Indonesia
 
 ## Daftar yang harus dilakukan
 
@@ -45,8 +51,12 @@ Berita Indo API adalah sebuah API yang menampilkan banyak berita di Indonesia se
   - [x] ~~Berita Liputan 6~~ (API berita ini mungkin tidak tersedia lagi, dikarenakan ada isu RSS dari Liputan6)
   - [x] Berita BBC
   - [x] Berita Tribun
+  - [x] Berita Jawa Pos  
+  - [x] Vice 
+  - [x] Berita Suara 
+  - [x] VOA Indonesia 
 - Tingkatkan API
-  - [ ] Cari data berita
+  - [x] Cari data berita
   - [ ] Memberikan halaman pada data API
 
 ## Instalasi
