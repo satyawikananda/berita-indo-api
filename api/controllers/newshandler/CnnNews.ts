@@ -33,7 +33,7 @@ class CnnNews {
                 delete items.enclosure
                 return items
             })
-            if (title !== undefined) {
+            if(title !== undefined) {
                 const search = useSearch(data, title)
                 let dataSearch: any = []
                 search.map((items) => {
@@ -66,7 +66,6 @@ class CnnNews {
 
     static async getAllNews(req: Request, res: Response) {
         try {
-            console.log('REQ', req.query)
             const { title }: Partial<Title> = req.query
             const url = RSS_CNN_NEWS.replace('/{type}', '')
             const result = await parserRss(url)
@@ -84,7 +83,7 @@ class CnnNews {
                 delete items.enclosure
                 return items
             })
-            if (title !== undefined) {
+            if(title !== undefined) {
                 const search = useSearch(data, title)
                 let dataSearch: any = []
                 search.map((items) => {
