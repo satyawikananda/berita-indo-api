@@ -23,6 +23,7 @@ export type ZoneTribun = "jakarta" | "jabar" | "mataram" | "mataraman" | "medan"
 export type TypeJawaPos = "nasional" | "entertainment" | "pendidikan" | "hukum-kriminal" | "pemilihan" | "sepak-bola" | "jabodetabek" | "internasional" | "lifestyle" | "kesehatan" | "infrastruktur" | "features" | "oto-dan-tekno" | "arsitektur-dan-desain" | "art-space" | "opini" | "wisata-dan-kuliner" | "hoax-atau-bukan"
 
 export type TypeSuara = "news" | "bisnis" | "lifestyle" | "entertainment" | "otomotif" | "tekno" | "health" | "mostpopular" | "wawancara" | "pressrelease"
+
 export interface DataResponse {
     code: number
     status?: string
