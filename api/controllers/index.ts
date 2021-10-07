@@ -9,6 +9,7 @@ import Liputan6News from './newshandler/Liputan6News'
 import BbcNews from './newshandler/BbcNews'
 import TribunNews from './newshandler/TribunNews'
 import JawaPosNews from './newshandler/JawaPosNews'
+import SuaraNews from './newshandler/SuaraNews'
 import notFound from './404'
 
 export default {
@@ -23,5 +24,6 @@ export default {
     BbcNews,
     TribunNews,
     JawaPosNews,
+    SuaraNews,
     notFound
 }

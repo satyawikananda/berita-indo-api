@@ -1,5 +1,5 @@
 import { gql } from 'apollo-server-express';
-import {ListsApi} from '../../../types/common'
+import { ListsApi } from '../../../types/common'
 
 export const typeDefs = gql`
   type listsApi {
@@ -137,6 +137,10 @@ const listsApi: ListsApi[] = [
   {
     label: 'Liputan 6 News',
     all: 'https://berita-indo-api.vercel.app/v1/liputan6-news',
+  },
+  {
+    label: 'Suara News',
+    all: 'https://berita-indo-api.vercel.app/v1/suara',
   },
 ];
 
