@@ -86,8 +86,7 @@ Untuk teknologi-nya, projek ini menggunakan:
 Jika Anda menggunakan API ini di aplikasi Anda, Anda bisa mendaftarkan projek Anda di bawah ini :
 
 - [Berita.id](https://github.com/NicolaDonoastro/berita.id) Platform berita minimalis oleh [NicolaDonoastro](https://github.com/NicolaDonoastro)
-- [Mobile News App](https://github.com/indrapalijama/mobile-news-platform) Aplikasi Mobile oleh [Indrapalijama](https://github.com/indrapalijama)
-
+- [Mobile News App](https://github.com/indrapalijama/mobile-news-platform) Aplikasi Mobile menggunakan Ionic oleh [Indrapalijama](https://github.com/indrapalijama)
 # Dukung saya
 
 Anda bisa mendukung saya di [Karya Karsa](https://karyakarsa.com/satyawikananda) dan [Trakteer](https://trakteer.id/satya-wikananda/)
