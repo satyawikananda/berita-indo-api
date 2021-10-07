@@ -57,6 +57,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "indrapalijama",
+      "name": "Indra Palijama",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33986004?v=4",
+      "profile": "http://indrapalijama.github.io",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
