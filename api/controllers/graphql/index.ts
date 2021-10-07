@@ -139,6 +139,10 @@ const listsApi: ListsApi[] = [
     all: 'https://berita-indo-api.vercel.app/v1/liputan6-news',
   },
   {
+    label: 'Vice',
+    all: 'https://berita-indo-api.vercel.app/v1/vice',
+  },
+  {
     label: 'Suara News',
     all: 'https://berita-indo-api.vercel.app/v1/suara',
   },

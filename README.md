@@ -36,6 +36,7 @@ Berita Indo API (or in English is Indonesian News API) is an API to display many
 - `/v1/tribun-news/:zone/:type` : Get specific news data by zone and type news of Tribun News
 - `/v1/jawa-pos/:type`: Get all news data of Jawa Pos News
 - `/v1/jawa-pos/:type`: Get specific news data by type news of Jawa Pos News
+- `/v1/vice/`:  Get all news data of Vice Indonesia
 
 > Each API Endpoint have a query paramaters named 'title', and this query parameters will be usefull if you want to search the API data by the title.
 
@@ -53,6 +54,7 @@ Berita Indo API (or in English is Indonesian News API) is an API to display many
   - [x] BBC News
   - [x] Tribun News
   - [x] Jawa Pos News 
+  - [x] Vice 
 - Improve API
   - [x] Search data news
   - [ ] Paginate data
@@ -117,6 +119,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/galanggg"><img src="https://avatars.githubusercontent.com/u/21099312?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Galanggg</b></sub></a><br /><a href="https://github.com/satyawikananda/berita-indo-api/commits?author=galanggg" title="Code">💻</a> <a href="#ideas-galanggg" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/axmad386"><img src="https://avatars.githubusercontent.com/u/8775678?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Akhmad Salafudin</b></sub></a><br /><a href="https://github.com/satyawikananda/berita-indo-api/commits?author=axmad386" title="Code">💻</a> <a href="https://github.com/satyawikananda/berita-indo-api/issues?q=author%3Aaxmad386" title="Bug reports">🐛</a> <a href="#ideas-axmad386" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://kirintux.ninja/"><img src="https://avatars.githubusercontent.com/u/64598048?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Enggar Tivandi</b></sub></a><br /><a href="https://github.com/satyawikananda/berita-indo-api/commits?author=nekoding" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/danar-noverawan-58a850184"><img src="https://avatars.githubusercontent.com/u/39963063?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Danar Noverawan</b></sub></a><br /><a href="https://github.com/satyawikananda/berita-indo-api/commits?author=danarn17" title="Code">💻</a> <a href="https://github.com/satyawikananda/berita-indo-api/commits?author=danarn17" title="Documentation">📖</a></td>
   </tr>
 </table>
 

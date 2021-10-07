@@ -47,6 +47,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "danarn17",
+      "name": "Danar Noverawan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39963063?v=4",
+      "profile": "https://www.linkedin.com/in/danar-noverawan-58a850184",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
