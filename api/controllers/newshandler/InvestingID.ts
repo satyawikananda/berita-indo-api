@@ -96,7 +96,7 @@ class InvestingID {
 
   static async getAllNews(req: Request, res: Response) {
     try {
-      const url = RSS_INVEST.replace('/{type}', 'news.rss')
+      const url = RSS_INVEST.replace('{type}', 'news.rss')
       const result = await parserRss(url)
       const data = result.items.map((items) => {
         items.image = {
