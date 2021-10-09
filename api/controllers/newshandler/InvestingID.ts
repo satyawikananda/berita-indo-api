@@ -67,7 +67,9 @@ class InvestingID {
         return res.status(200).send(dataResponse)
       } else {
         const url = RSS_INVEST.replace('{type}', rss_url.url) + '.rss'
+        console.log('url', url)
         const result = await parserRss(url)
+        console.log('result', result)
         const data = result.items.map((items) => {
           items.image = {
             small: items.enclosure.url
@@ -98,6 +100,8 @@ class InvestingID {
     try {
       const url = RSS_INVEST.replace('{type}', 'news.rss')
       const result = await parserRss(url)
+      console.log('url', url)
+      console.log('result', result)
       const data = result.items.map((items) => {
         items.image = {
           small: items.enclosure.url
