@@ -12,7 +12,7 @@ import JawaPosNews from './newshandler/JawaPosNews'
 import ViceNews from './newshandler/ViceNews'
 import SuaraNews from './newshandler/SuaraNews'
 import VOAIndonesia from './newshandler/VOAIndonesia'
-import InvestingID from './newshandler/InvestingID'
+import Investing from './newshandler/Investing'
 import notFound from './404'
 
 export default {
@@ -30,6 +30,6 @@ export default {
     ViceNews,
     SuaraNews,
     VOAIndonesia,
-    InvestingID,
+    Investing,
     notFound
 }

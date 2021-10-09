@@ -52,7 +52,7 @@ interface Params {
   type?: TypeInvestingID
 }
 
-class InvestingID {
+class Investing {
   static async getNews(req: Request, res: Response) {
     try {
       const { type }: Partial<Params> = req.params
@@ -121,12 +121,11 @@ class InvestingID {
       }
       return res.status(200).send(dataResponse)
     } catch (error) {
-      return res.status(200).send({
-        error: `${error}`,
+      return res.status(500).send({
         message: `${error.message}`
       })
     }
   }
 }
 
-export default InvestingID
+export default Investing
