@@ -112,8 +112,8 @@ router.get('/v1/vice/:page?', BeritaIndo.ViceNews.getAllNews)
 router.get('/v1/suara/', BeritaIndo.SuaraNews.getAllNews)
 router.get('/v1/suara/:type', BeritaIndo.SuaraNews.getNews)
 router.get('/v1/voa/', BeritaIndo.VOAIndonesia.getAllNews)
-router.get('/v1/invest/', BeritaIndo.InvestingID.getAllNews)
-router.get('/v1/invest/:type', BeritaIndo.InvestingID.getNews)
+router.get('/v1/invest/', BeritaIndo.Investing.getAllNews)
+router.get('/v1/invest/:type', BeritaIndo.Investing.getNews)
 
 router.all('*', BeritaIndo.notFound)
 
