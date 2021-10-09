@@ -121,7 +121,8 @@ class InvestingID {
       }
       return res.status(200).send(dataResponse)
     } catch (error) {
-      return res.status(500).send({
+      return res.status(200).send({
+        error: `${error}`,
         message: `${error.message}`
       })
     }
