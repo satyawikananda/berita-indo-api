@@ -97,6 +97,7 @@ Jika Anda menggunakan API ini di aplikasi Anda, Anda bisa mendaftarkan projek An
 
 - [Berita.id](https://github.com/NicolaDonoastro/berita.id) Platform berita minimalis oleh [NicolaDonoastro](https://github.com/NicolaDonoastro)
 - [Mobile News App](https://github.com/indrapalijama/mobile-news-platform) Aplikasi Mobile menggunakan Ionic oleh [Indrapalijama](https://github.com/indrapalijama)
+- [Newsid](https://github.com/ediruhiat/newsid) Aplikasi Breaking news CLI oleh [ediruhiat](https://github.com/ediruhiat)
 # Dukung saya
 
 Anda bisa mendukung saya di [Karya Karsa](https://karyakarsa.com/satyawikananda) dan [Trakteer](https://trakteer.id/satya-wikananda/)

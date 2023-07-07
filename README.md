@@ -103,6 +103,7 @@ If you use this API to your project application, you can register your project i
 - [Mobile News Platform](https://github.com/indrapalijama/mobile-news-platform) Mobile News Apps using Ionic by [Indrapalijama](https://github.com/indrapalijama)
 - [React CNN News](https://github.com/galanggg/react-cnn-news) Simple news app by [Galanggg](https://github.com/galanggg)
 - [COnews](https://github.com/maulana2468/COnews) CNN & CNBC Mobile news app by [Maulana2468](https://github.com/maulana2468)
+- [Newsid](https://github.com/ediruhiat/newsid) CLI Breaking news app app by [ediruhiat](https://github.com/ediruhiat)
 
 # Support Me
 
