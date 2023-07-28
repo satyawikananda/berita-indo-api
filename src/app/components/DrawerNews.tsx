@@ -1,10 +1,11 @@
 "use client";
 import { Drawer } from "vaul";
 import { useEffect, useRef, useState } from "react";
-import ReactJson from "react-json-view";
 import { ListNews } from "@/app/utils";
 import { useToast } from "@/app/hooks/useToast";
+import dynamic from "next/dynamic";
 
+const ReactJson = dynamic(() => import("react-json-view"), { ssr: false });
 export const DrawerNews = ({
   open,
   onOpenChange,
