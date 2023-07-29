@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ListNews, listNews } from "@/app/utils";
 import { DrawerNews } from "./components/DrawerNews";
+import { Tweet } from "react-tweet";
 
 export default function Home() {
   const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
@@ -10,7 +11,7 @@ export default function Home() {
   return (
     <main className="flex w-full flex-col justify-between bg-grid-gray-50 h-[100vh] pt-10">
       <nav className="flex flex-row w-full justify-between items-center relative h-20 px-4 max-w-screen-lg mx-auto">
-        <p className="font-bold text-sky-500 text-3xl text-transparent bg-clip-text bg-gradient-to-r text-center from-sky-500 to-sky-600">
+        <p className="font-bold text-sky-500 text-xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r text-center from-sky-500 to-sky-600">
           Berita Indo API
         </p>
         <Link
@@ -58,6 +59,9 @@ export default function Home() {
               {list.news}
             </div>
           ))}
+        </div>
+        <div className="p-6">
+          <Tweet id="1685260678226173952" />
         </div>
       </section>
       <footer className="footer footer-center p-4">
