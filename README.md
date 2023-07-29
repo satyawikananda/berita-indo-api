@@ -2,7 +2,7 @@
 
 <h1>Berita Indo API</h1>
 
-<p>An api to display news in Indonesia</p>
+<p>An API designed to showcase news from Indonesia.</p>
 
 ![berita-indo-api](https://socialify.git.ci/satyawikananda/berita-indo-api/image?description=1&forks=1&issues=1&logo=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F26%2F91%2Ff2%2F2691f2fa1a0f078f5f274edf7fea6763.png&owner=1&pulls=1&stargazers=1&theme=Light)
 
@@ -12,61 +12,16 @@
 
 ## Description
 
-Berita Indo API (or in English is Indonesian News API) is an API to display many news Indonesia like from CNN News, CNBC News, etc. For the datas was parsed from the RSS feed to JSON type and also Rest API. For the routes, you can see it below.
+The Berita Indo API, also known as the Indonesian News API, is designed to present various news from Indonesia, sourced from providers such as CNN News, CNBC News, and others. The data is extracted from RSS feeds and converted into JSON format, accessible through a Rest API. 
 
-## List Routes Berita Indo API
+## List Endpoints Berita Indo API
+You can see the list endpoint and its associated type either directly on the website or through this [code file](https://github.com/satyawikananda/berita-indo-api/blob/5af2ef203c11e9abeda675572e4affa3489439d4/src/app/api/route.ts#L4C29-L4C29).
 
-- `/` : Get all list and info about this API
-- `/v1/cnn-news` : Get all news data of CNN News
-- `/v1/cnn-news/:type` : Get specific news data by type news of CNN News
-- `/v1/cnbc-news/` : Get all news data of CNBC News
-- `/v1/cnbc-news/:type` : Get specific news data by type news of CNBC News
-- `/v1/republika-news` : Get all news data of Republika News
-- `/v1/republika-news/:type` : Get specific news data by type news of Republika News
-- `/v1/tempo-news/` : Get all news data of Tempo News
-- `/v1/tempo-news/:type` : Get specific news data by type news of Tempo News
-- `/v1/antara-news/:type` : Get specific news data by type news of Antara News
-- `/v1/kumparan-news/` : Get all news data of Kumparan News
-- `/v1/okezone-news` : Get all news data of Okezone News
-- `/v1/okezone-news/:type` : Get specific news data by type news of Okezone News
-- ~~`/v1/liputan6-news` : Get all news data of Liputan 6 News~~ (This RSS feed maybe isn't available again)
-- `/v1/bbc-news`: Get all news data of BBC News
-- `/v1/bbc-news/:type` : Get specific news data by type news of BBC News
-- `/v1/tribun-news`: Get all news data of Tribun News
-- `/v1/tribun-news/:zone/:type` : Get specific news data by zone and type news of Tribun News
-- `/v1/jawa-pos/:type`: Get all news data of Jawa Pos News
-- `/v1/jawa-pos/:type`: Get specific news data by type news of Jawa Pos News
-- `/v1/vice/`:  Get all news data of Vice Indonesia
-- `/v1/suara/`:  Get all news data of SUARA News
-- `/v1/suara/:type`:  Get specific news data by type news of SUARA News
-- `/v1/voa/`:  Get all news data of VOA Indonesia
-
-> Each API Endpoint have a query paramaters named 'title', and this query parameters will be useful if you want to search the API data by the title.
-
-## To-do List
-
-- News
-  - [x] CNN News
-  - [x] CNBC News
-  - [x] Republika News
-  - [x] Tempo News
-  - [x] Antara News
-  - [x] Kumparan News
-  - [x] Okezone News
-  - [x] ~~Liputan 6 News~~ (This RSS feed maybe isn't available again)
-  - [x] BBC News
-  - [x] Tribun News
-  - [x] Jawa Pos News 
-  - [x] Vice 
-  - [x] Suara News 
-  - [x] VOA Indonesia 
-- Improve API
-  - [x] Search data news
-  - [ ] Paginate data
+> Every API endpoint includes a query parameter called 'search', which proves to be useful when you intend to search the API data based on the title.
 
 ## Installation
 
-If you want to add this project in your own machine, you can install this project by following the step below
+To incorporate this project into your own machine, you can easily install it by following the steps outlined below.
 
 1. Clone this repository
 
@@ -76,33 +31,34 @@ git clone https://github.com/satyawikananda/berita-indo-api.git
 
 2. Install dependencies
 
-In my case, i'm using pnpm for package manager, you can adjust with your favorite package manager
-
 ```
-pnpm install
+yarn install
 ```
 
-> To running my program, you can use command `ts-node ./api/server.ts` in your terminal
+> To run this program, simply use the command `yarn dev` in your terminal.
 
 ## Tech Stack
 
-For the tech stack, Berita Indo API was using :
+Regarding the tech stack, Berita Indo API utilizes:
 
-1. Typescript
-2. Node JS
-3. Express
-4. RSS Parser
-5. Vercel
-6. and many utilities
+1. [Next.js](https://nextjs.org/) - The React Framework
+2. [Daisy UI](https://daisyui.com) - Tailwind CSS component library
+3. [React Json Viewer](https://github.com/mac-s-g/react-json-view) - JSON viewer for react
+4. [React Tweet](https://github.com/vercel/react-tweet) - Tweet embed for react app
+5. [RSS Parser](https://github.com/rbren/rss-parser) - A lightweight RSS parser, for Node and the browser
+6. [Fuse.js](https://www.fusejs.io/) - Powerful, lightweight fuzzy-search library, with zero dependencies.
+7. [Vaul](https://vaul.emilkowal.ski/) - Drawer component for React.
+8. [Snackbar](https://github.com/egoist/snackbar) - A tiny browser library for showing a brief message at the bottom of the screen
 
 # Showcase
 
-If you use this API to your project application, you can register your project in this showcase below :
+If you integrate this API into your project application, you have the option to register your project in the showcase provided below:
 
 - [Berita.id](https://github.com/NicolaDonoastro/berita.id) Minimalist news platform by [NicolaDonoastro](https://github.com/NicolaDonoastro)
 - [Mobile News Platform](https://github.com/indrapalijama/mobile-news-platform) Mobile News Apps using Ionic by [Indrapalijama](https://github.com/indrapalijama)
 - [React CNN News](https://github.com/galanggg/react-cnn-news) Simple news app by [Galanggg](https://github.com/galanggg)
 - [COnews](https://github.com/maulana2468/COnews) CNN & CNBC Mobile news app by [Maulana2468](https://github.com/maulana2468)
+- [Newsid](https://github.com/ediruhiat/newsid) CLI Breaking news app app by [ediruhiat](https://github.com/ediruhiat)
 
 # Support Me
 
@@ -110,7 +66,7 @@ You can support me on [Karya Karsa](https://karyakarsa.com/satyawikananda) and [
 
 # Contribution
 
-Want to make this project better? You can contribute this project, I am very open if there are contributions to this project.
+Interested in enhancing this project? You can actively contribute to it. I am fully receptive to any contributions that can help improve the project.
 
 # Contributors ✨
 
@@ -143,4 +99,4 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 ![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)
 ![vercelbadge](https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg)
 
-Powered by Typescipt and vercel. Code licensed under [MIT License](https://raw.githubusercontent.com/satyawikananda/berita-indo-api/main/LICENSE?token=AH44ZFF4GHAMNS4WIL4FCC3ADZ4F6).
+Powered by Next.js and Vercel. Code licensed under [MIT License](https://raw.githubusercontent.com/satyawikananda/berita-indo-api/main/LICENSE?token=AH44ZFF4GHAMNS4WIL4FCC3ADZ4F6).
