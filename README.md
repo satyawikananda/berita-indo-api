@@ -59,6 +59,7 @@ If you integrate this API into your project application, you have the option to 
 - [React CNN News](https://github.com/galanggg/react-cnn-news) Simple news app by [Galanggg](https://github.com/galanggg)
 - [COnews](https://github.com/maulana2468/COnews) CNN & CNBC Mobile news app by [Maulana2468](https://github.com/maulana2468)
 - [Newsid](https://github.com/ediruhiat/newsid) CLI Breaking news app app by [ediruhiat](https://github.com/ediruhiat)
+- [BeritaKita](https://github.com/ifalfahri/beritakita) News website from various sources by [ifalfahri](https://github.com/ifalfahri)
 
 # Support Me
 
